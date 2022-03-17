@@ -1,0 +1,14 @@
+{
+    "0x793304f421b09D8fDa4225d7AAE33483fDA5406F": {
+        "address": "0x793304f421b09D8fDa4225d7AAE33483fDA5406F",
+        "itemID": "100000"
+    },
+    "0x7cC71EE395b3ec41F04dCD9b13a079dA859A88a1": {
+        "address": "0x7cC71EE395b3ec41F04dCD9b13a079dA859A88a1",
+        "itemID": "1000"
+    },
+    "dropDetails": {
+        "contractAddress": "0xF50F25B5514880c42b65FB883Ccce32A1064f0CD",
+        "merkleroot": "0x7ed134098038faa25cbd2b32eea3229663c0aefa7dc31a51c2397164d3270df9"
+    }
+}
