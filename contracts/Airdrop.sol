@@ -27,19 +27,19 @@ contract Airdrop{
     event AddressClaim(address account,uint256 amount);
 
     mapping(address => AddressAirdrop) addressTostruct;
-    address bat = 0xF50F25B5514880c42b65FB883Ccce32A1064f0CD;
+    address bat = 0xBF1f5A50e35B8E52182a7Db39d2d877d335E8380;
 
     function claimForAddress(
         uint256 _amount,
-        bytes32[] calldata _merkleProof
+        bytes32[] calldata _merkleProof,
+        bytes32 _merkleRoot
     ) external {
-        AddressAirdrop storage drop = addressTostruct[msg.sender];
-        require(drop.maxUsers > 0, "Airdrop is not created yet");
+         AddressAirdrop storage drop = addressTostruct[msg.sender];
+        // require(drop.maxUsers > 0, "Airdrop is not created yet");
         // Verify the merkle proof.
         bytes32 node = keccak256(abi.encodePacked(msg.sender, _amount));
-        bytes32 merkleRoot = drop.merkleRoot;
         //address token = drop.tokenAddress;
-        require(MerkleProof.verify(_merkleProof, merkleRoot, node), "MerkleDistributor: Invalid proof.");
+        require(MerkleProof.verify(_merkleProof, _merkleRoot, node), "MerkleDistributor: Invalid proof.");
 
         IERC20(bat).transfer( msg.sender, _amount);
      

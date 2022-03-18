@@ -1,6 +1,6 @@
 {
-    "0x793304f421b09D8fDa4225d7AAE33483fDA5406F": {
-        "leaf": "0x649d2b46fec03a9d6a48ce19bf007c3d0b2e8b83195e39a1cb192798b14dda46",
+    "0xC635dC7e540d384876aC4D6178D9971241b8383B": {
+        "leaf": "0x7d45a5abe32ae17d6b5ff56dd48c5709be57512c92ed87852385e233c466c1b5",
         "proof": [
             "0xcc5d4e3390ede0c11f1c911108b987f89764e85370d160b64e9a212ad743ffc6"
         ]
@@ -8,7 +8,7 @@
     "0x7cC71EE395b3ec41F04dCD9b13a079dA859A88a1": {
         "leaf": "0xcc5d4e3390ede0c11f1c911108b987f89764e85370d160b64e9a212ad743ffc6",
         "proof": [
-            "0x649d2b46fec03a9d6a48ce19bf007c3d0b2e8b83195e39a1cb192798b14dda46"
+            "0x7d45a5abe32ae17d6b5ff56dd48c5709be57512c92ed87852385e233c466c1b5"
         ]
     }
 }

@@ -34,6 +34,13 @@ const config: HardhatUserConfig = {
       url: process.env.RINKEY || "",
       accounts:
         process.env.PRIVATE !== undefined ? [process.env.PRIVATE] : [],
+        gas: 2100000,
+        gasPrice: 8000000000
+    },
+    gorlie: {
+      url: process.env.RINKEY || "",
+      accounts:
+        process.env.PRIVATE !== undefined ? [process.env.PRIVATE] : [],
     },
   },
   gasReporter: {
